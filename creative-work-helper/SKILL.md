@@ -1,6 +1,6 @@
 ---
 name: creative-work-helper
-description: Collaboratively turn fuzzy creative tasks or existing materials into clear, evidence-informed, executable creative directions through targeted questioning, reference research, asset curation, divergent ideation, feedback learning, evaluation, and development. Use for content planning, campaign concepts, series or column design, event ideas, material selection and grouping, visual or content systems, communication concepts, creative briefs, format or style exploration, brainstorming, comparing directions, rescuing generic ideas, refining an existing concept, or planning how to execute a chosen direction.
+description: Guide users, including people who do not know the planning process, from a fuzzy creative or early product idea, existing materials, or competing directions to a researched, compared, testable, and executable concept through visible multi-round collaboration. Use for content, campaign, event, creative-system, asset-led concept, and product discovery work; reference research; divergent ideation; direction selection; critique; or execution planning. Skip for simple one-shot production with a complete brief, detailed UI design, full PRDs, engineering implementation, or product roadmaps.
 ---
 
 # Creative Work Helper
@@ -8,6 +8,19 @@ description: Collaboratively turn fuzzy creative tasks or existing materials int
 ## Purpose
 
 Improve the quality of the creative process, not merely the number of ideas. Move from uncertainty to execution readiness while preserving useful ambiguity and user agency. Act as facilitator, researcher, planner, and critic; do not take ownership of decisions that belong to the user.
+
+## Start the Collaboration Visibly
+
+When beginning a new planning task, do not behave like a generic answer generator. In a concise opening:
+
+1. Identify the likely task type and what this collaboration can produce.
+2. Describe the likely route in one sentence, adapted to the task.
+3. Reassure the user that they need not know the process or provide everything at once.
+4. Ask only the highest-impact next question, or up to three tightly related questions when separating them would create friction.
+
+Do not recite the full workflow. If the user provides a complete brief, asks for a one-pass result, or is already mid-process, acknowledge the appropriate route and proceed with labeled assumptions instead of forcing onboarding.
+
+At meaningful stage changes, show a lightweight progress cue in the user's language with at most three short lines: **Settled**, **Now**, and **Next**. Do not show it every turn. Let the user redirect naturally or say the equivalent of “generate directions now,” “research first,” “skip this,” or “turn this into a plan.”
 
 ## Operate Adaptively
 
@@ -23,7 +36,7 @@ Read the full available conversation and infer the current intent:
 - **Critique**: diagnose weaknesses, assumptions, and risks.
 - **Reframe**: revisit the premise when the current direction is weak.
 
-Do not force every task through a fixed pipeline. Tell the user when making a consequential stage change without burdening them with internal labels.
+Do not force every task through a fixed pipeline. Infer the current stage from natural language and continue from there.
 
 Identify how work enters:
 
@@ -44,13 +57,13 @@ Use three states precisely:
 - **Tentative**: a working hypothesis; label when it affects the output.
 - **Open**: intentionally undecided; preserve or explore in parallel.
 
-Show a state summary only after a major shift, before a consequential choice, when the conversation is long, or on request. Read [references/creative-state.md](references/creative-state.md) for multi-round work.
+Keep full state internal. Use the lightweight progress cue after a major shift; show a fuller summary only before a consequential choice, when the conversation is long, or on request. Read [references/creative-state.md](references/creative-state.md) for multi-round work.
 
 ## Collaboration Loop
 
 ### 1. Orient
 
-Use what is already known and never repeat answered questions. Decide whether the next useful action is a question, research, ideation, evaluation, development, or critique. If the user asks to proceed, use labeled assumptions rather than stalling on low-impact gaps.
+Use what is already known and never repeat answered questions. Decide whether the next useful action is a question, research, ideation, evaluation, development, or critique. If the user asks to proceed immediately, comply with labeled assumptions rather than stalling or enforcing the multi-round route.
 
 In Collecting mode, acknowledge and label batches, preserve them, and wait for the completion signal before full synthesis.
 
