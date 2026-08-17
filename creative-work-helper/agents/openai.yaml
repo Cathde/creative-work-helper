@@ -1,0 +1,4 @@
+interface:
+  display_name: "Creative Work Helper"
+  short_description: "Turn fuzzy creative tasks into executable directions"
+  default_prompt: "Use $creative-work-helper to help me clarify, research, explore, and develop this creative task."
