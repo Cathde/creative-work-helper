@@ -135,15 +135,52 @@ When evidence is unavailable, the skill marks the proposed problem as **Tentativ
 
 ## Install
 
-Clone this repository, then copy the skill directory into your Codex skills directory:
+### Ask Codex to install it
+
+The easiest option is to give Codex this request:
+
+```text
+Install the creative-work-helper skill from
+https://github.com/Cathde/creative-work-helper/tree/main/creative-work-helper
+```
+
+### Install manually on macOS or Linux
+
+Clone the repository, then synchronize the skill directory into your Codex skills directory:
 
 ```bash
 git clone https://github.com/Cathde/creative-work-helper.git
 mkdir -p ~/.codex/skills
-cp -R creative-work-helper/creative-work-helper ~/.codex/skills/
+rsync -a creative-work-helper/creative-work-helper/ ~/.codex/skills/creative-work-helper/
 ```
 
-Restart Codex if the skill is not discovered immediately.
+Start a new Codex turn after installation. If the skill is not discovered, restart the app.
+
+## Update
+
+### Ask Codex to update it
+
+Recommended for most users:
+
+```text
+Update my installed creative-work-helper skill from
+https://github.com/Cathde/creative-work-helper/tree/main/creative-work-helper.
+Back up the current installed copy, replace it with the latest main version,
+validate the skill, and tell me when it will become active.
+```
+
+### Update manually on macOS or Linux
+
+From the repository you previously cloned:
+
+```bash
+cd /path/to/creative-work-helper
+git pull --ff-only
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills/creative-work-helper"
+rsync -a creative-work-helper/ "${CODEX_HOME:-$HOME/.codex}/skills/creative-work-helper/"
+```
+
+If you installed a tagged release and want to stay on a fixed version, replace `main` with the desired tag before synchronizing. Start a new Codex turn after updating; restart the app if the old instructions remain in use.
 
 ## Use
 
@@ -188,6 +225,16 @@ Creative Work Helper 是一个面向开放式创意与早期产品概念任务�
 2. **交付模板跟随任务变化。** Skill 会先询问交付要求；如果用户不明确，再根据任务类型提出一套通用模板供删改。
 3. **过程应该被用户感知，但不打断对话。** 首次进入会说明路线，阶段变化时才显示“已明确 / 当前 / 下一步”，用户可以随时跳过、搜索或要求直接成案。
 4. **产品假设不能伪装成用户洞察。** 没有证据时会标记为 Tentative，并优先设计最低成本的验证方法。
+
+需要更新时，可以直接对 Codex 说：
+
+```text
+请从 https://github.com/Cathde/creative-work-helper/tree/main/creative-work-helper
+更新我本机安装的 creative-work-helper。先备份旧版本，替换为最新 main，
+完成验证后告诉我何时生效。
+```
+
+也可以在原来的仓库目录运行 `git pull --ff-only`，然后按照上方 [Update](#update) 的命令同步到 Codex skills 目录。
 
 ## License
 
