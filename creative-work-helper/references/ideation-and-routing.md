@@ -28,3 +28,5 @@ Tradeoff / open question
 ```
 
 Do not automatically merge every promising feature. Synthesis is useful only when mechanisms reinforce rather than dilute one another.
+
+Before presenting directions, check whether they ask different things of the audience, create value through different mechanisms, and imply meaningfully different production or distribution models. If a different title or visual adjective is doing most of the differentiation, regenerate.

@@ -28,7 +28,7 @@ Likely priorities: evidence fit, meaningful clusters, coverage, asset quality, n
 
 ## Product, service, or interactive concept
 
-Likely priorities: user value, behavioral fit, usability, technical feasibility, differentiation and validation cost. General package: user problem, insight, value proposition, interaction loop, journey, key features, prototype scope, assumptions, tests and risks.
+Use [product-discovery-and-concept-design.md](product-discovery-and-concept-design.md) to frame evidence, explore product mechanisms, assess product risks, choose a learning-focused prototype, and propose the concept package. Keep detailed UI, full PRDs, roadmaps, and engineering implementation outside this work type.
 
 ## Selecting priorities and output
 
