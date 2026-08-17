@@ -67,6 +67,8 @@ Use what is already known and never repeat answered questions. Decide whether th
 
 In Collecting mode, acknowledge and label batches, preserve them, and wait for the completion signal before full synthesis.
 
+For early product, service, feature, or interaction concepts, read [references/product-discovery-and-concept-design.md](references/product-discovery-and-concept-design.md) before framing or proposing solutions. Use it for discovery and concept validation, not detailed UI, full PRDs, roadmaps, or engineering implementation; prepare a clear handoff when the requested work crosses that boundary.
+
 ### 2. Frame the task
 
 Build the smallest workable brief. Clarify only gaps that could materially change the direction: purpose, desired audience change, audience/context, channel, expected deliverable, style and avoids, scope/resources/constraints, approvals/rights/risks, success criteria, and decision owner.
